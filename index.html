@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princess Jane G. Castro | Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" aria-hidden="true">
+      <div class="cloud-spinner">
+        <span class="cloud"></span>
+        <span class="cloud small"></span>
+        <span class="sparkle"></span>
+      </div>
+      <p>Preparing your polished portfolio...</p>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">☀️</button>
+
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">✦</span>
+        <span>Jane Portfolio</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <a class="nav-link active" href="#home"><span class="nav-icon">◉</span><span>Dashboard</span></a>
+        <a class="nav-link" href="#about"><span class="nav-icon">✦</span><span>About Me</span></a>
+        <a class="nav-link" href="#personal-info"><span class="nav-icon">🧾</span><span>Personal Information</span></a>
+        <a class="nav-link" href="#education"><span class="nav-icon">🎓</span><span>Educational Background</span></a>
+        <a class="nav-link" href="#technical-skills"><span class="nav-icon">⚙</span><span>Technical Skills</span></a>
+        <a class="nav-link" href="#soft-skills"><span class="nav-icon">💡</span><span>Soft Skills</span></a>
+        <a class="nav-link" href="#programming-languages"><span class="nav-icon">⌨</span><span>Programming Languages</span></a>
+        <a class="nav-link" href="#software-applications"><span class="nav-icon">🧰</span><span>Software Applications</span></a>
+        <a class="nav-link" href="#projects"><span class="nav-icon">📁</span><span>Projects</span></a>
+        <a class="nav-link" href="#certificates"><span class="nav-icon">🏅</span><span>Certificates</span></a>
+        <a class="nav-link" href="#resume"><span class="nav-icon">📄</span><span>Resume / CV</span></a>
+        <a class="nav-link" href="#gallery"><span class="nav-icon">🖼</span><span>Gallery</span></a>
+        <a class="nav-link" href="#contact"><span class="nav-icon">✉</span><span>Contact</span></a>
+        <a class="nav-link" href="#home" id="settings-link"><span class="nav-icon">⚙</span><span>Settings</span></a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="panel hero-panel reveal" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Student Profile Portfolio</p>
+            <h1 id="welcome-message">Hello, I’m Princess Jane G. Castro</h1>
+            <p class="hero-subtitle" id="motto"></p>
+            <p class="hero-summary" id="profile-summary"></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Profile</a>
+              <a class="btn btn-secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+            </div>
+            <div class="hero-meta">
+              <span class="pill">Future IT Professional</span>
+              <span class="pill">Creative Problem Solver</span>
+            </div>
+            <div class="stats-grid" id="hero-stats"></div>
+          </div>
+          <div class="hero-visual">
+            <div class="avatar-shell">
+              <img src="uploads/profile%20photo.jpg" alt="Princess Jane G. Castro" />
+            </div>
+            <div class="floating-badge">BSIT · First Year</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="about">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">About Me</p>
+            <h2>Professional identity and personal story</h2>
+          </div>
+          <span class="section-pill">Creative • Curious • Growth-Focused</span>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card">
+            <div class="card-label">Profile Overview</div>
+            <p id="bio"></p>
+            <p id="career-goals"></p>
+            <div class="pill-row" id="about-badges"></div>
+          </article>
+          <article class="glass-card">
+            <div class="card-label">Quick Snapshot</div>
+            <div class="info-list" id="personal-info-summary"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="personal-info">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Personal Information</p>
+            <h2>Contact details and personal background</h2>
+          </div>
+          <span class="section-pill">Student • Learner • Future Professional</span>
+        </div>
+        <article class="glass-card">
+          <div class="info-list" id="personal-info-detailed"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal" id="education">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Educational Background</p>
+            <h2>A clear academic journey</h2>
+          </div>
+          <span class="section-pill">Milestones • Growth • Learning</span>
+        </div>
+        <div class="timeline-grid" id="education-list"></div>
+      </section>
+
+      <section class="panel reveal" id="technical-skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Technical Skills</p>
+            <h2>Strengths in web development and digital tools</h2>
+          </div>
+          <span class="section-pill">Practical • Growing • Structured</span>
+        </div>
+        <article class="glass-card">
+          <div id="technical-skills-list"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal" id="soft-skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Soft Skills</p>
+            <h2>Personal strengths that support every project</h2>
+          </div>
+          <span class="section-pill">Adaptable • Collaborative • Responsible</span>
+        </div>
+        <article class="glass-card">
+          <div class="badge-cloud" id="soft-skills-list"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal" id="programming-languages">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Programming Languages</p>
+            <h2>Languages and foundations I’m building with</h2>
+          </div>
+          <span class="section-pill">Foundation • Practice • Curiosity</span>
+        </div>
+        <article class="glass-card">
+          <div class="language-grid" id="programming-languages-list"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal" id="software-applications">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Software Applications</p>
+            <h2>Tools that help me create and organize ideas</h2>
+          </div>
+          <span class="section-pill">Productive • Creative • Organized</span>
+        </div>
+        <article class="glass-card">
+          <div class="app-grid" id="software-applications-list"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal" id="projects">
+        <div class="section-heading with-tools">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work and digital solutions</h2>
+          </div>
+          <input id="project-search" type="search" placeholder="Search projects" />
+        </div>
+        <div class="card-grid" id="project-grid"></div>
+      </section>
+
+      <section class="panel reveal" id="certificates">
+        <div class="section-heading with-tools">
+          <div>
+            <p class="eyebrow">Certificates</p>
+            <h2>Recognitions and training milestones</h2>
+          </div>
+          <input id="certificate-search" type="search" placeholder="Search certificates" />
+        </div>
+        <div class="card-grid" id="certificate-grid"></div>
+      </section>
+
+      <section class="panel reveal" id="resume">
+        <div class="section-heading">
+          <p class="eyebrow">Resume / CV</p>
+          <h2>Concise profile summary and experience</h2>
+        </div>
+        <div class="resume-grid">
+          <article class="glass-card">
+            <div class="card-label">Profile Summary</div>
+            <p id="resume-summary"></p>
+            <div class="card-label margin-top">Education</div>
+            <ul class="resume-list" id="resume-education"></ul>
+            <div class="card-label margin-top">Skills</div>
+            <div class="pill-row" id="resume-skills"></div>
+          </article>
+          <article class="glass-card">
+            <div class="card-label">Experience & References</div>
+            <ul class="resume-list" id="experience-list"></ul>
+            <ul class="resume-list" id="references-list"></ul>
+            <a class="btn btn-primary download-btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="gallery">
+        <div class="section-heading with-tools">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2>Moments captured in a polished gallery</h2>
+          </div>
+          <div class="filter-chips" id="gallery-filters"></div>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="panel reveal" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect and collaborate</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <article class="glass-card contact-card-item">
+              <div class="card-label">Reach Me</div>
+              <p><strong>Email:</strong> <a href="mailto:castroprincessjane067@gmail.com">castroprincessjane067@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+639850400472">09850400472</a></p>
+              <p><strong>Address:</strong> Purok 5 Castillo Village, Mangagoy, Bislig City</p>
+            </article>
+            <article class="glass-card contact-card-item">
+              <div class="card-label">Social</div>
+              <p><a href="https://www.facebook.com/PrincessJaneCastro" target="_blank" rel="noreferrer">Facebook</a></p>
+              <p><a href="mailto:castroprincessjane067@gmail.com">Email Me</a></p>
+            </article>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="4" placeholder="Write your message" required></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-response" id="form-response"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Princess Jane G. Castro</p>
+      <div class="footer-links">
+        <a href="mailto:castroprincessjane067@gmail.com">Email</a>
+        <a href="https://www.facebook.com/PrincessJaneCastro" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+      <p>Last updated: 2026-07-13</p>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close preview">×</button>
+      <img id="lightbox-image" src="" alt="Gallery preview" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
